@@ -12,7 +12,7 @@ def ping_server(hostname):
 		print hostname, 'is down!'
 	return response
 
-hostname_list= ["58.56.231.212:11093" ,'218.3.235.102:11098']
+hostname_list= ["" ,'']
 
 def check_server(hostname_list):
 	for hostname in hostname_list:

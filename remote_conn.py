@@ -7,4 +7,4 @@ def sys_version(ipaddress, user, password):
         print sys.NumberOfProcesses  
 
 if __name__ == '__main__':
-    sys_version(ipaddress="218.3.235.102", user="qu", password="qwaszx")
+    sys_version(ipaddress="", user="qu", password="qwaszx")

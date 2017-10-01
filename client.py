@@ -30,16 +30,3 @@ while True:
 	pass
 
 
-
-
-
-# s = socket.socket()         # Create a socket object
-# host = socket.gethostname() # Get local machine name
-# port = 12345                # Reserve a port for your service.
-# # print (host)
-
-# host='218.3.235.102'
-# port=11098
-# s.connect((host, port))
-# print s.recv(1024)
-# s.close     

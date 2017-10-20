@@ -72,6 +72,7 @@ if __name__ == '__main__':
                         time.sleep(0.3)
                         #if real_plays%20==0:
                         os.system('shutdown.bat')
+                        time.sleep(7)
                         os.system('restart.bat')
 
                 

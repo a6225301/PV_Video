@@ -16,7 +16,7 @@ import re,signal
 
 #start_time=time.strftime('%Y-%m-%d',time.localtime(time.time()))
 
-# os.system('restart.bat')
+os.system('restart.bat')
 
 def open_web(rannum,url):
         #driver=webdriver.Firefox()
@@ -114,15 +114,16 @@ if __name__ == '__main__':
                                 mul=multiprocessing.Process(target=open_web,args=(rannum,url,))
                                 mul.start()
                         mul.join()
-                        SearchRet=SearchPID(KillProclist)
-                        KillPID(SearchRet)
-                        
+                        #SearchRet=SearchPID(KillProclist)
+                        #KillPID(SearchRet)
+                        os.system('python Kill_Chrome.py')
+                        time.sleep(2)
                         if end==True:
                                 break
                         time.sleep(0.3)
-                        # if real_plays%20==0:
-                        #         os.system('shutdown.bat')
-                        #         time.sleep(7)
-                        #         os.system('restart.bat')
+                        if real_plays%20==0:
+                                os.system('shutdown.bat')
+                                time.sleep(7)
+                                os.system('restart.bat')
 
                 
